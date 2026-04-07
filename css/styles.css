@@ -969,13 +969,45 @@ select.form-control {
 #modal-login:not([hidden]) { display: flex; }
 
 .login-modal {
-  max-width: 400px;
+  max-width: 460px;
   border-radius: var(--radius-xl);
   overflow: hidden;
 }
+.login-modal .modal-body {
+  padding: 32px 40px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login-modal .modal-footer {
+  padding: 0 40px 36px;
+  border-top: none;
+  flex-direction: column;
+}
+.login-modal .form-group {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.login-modal .form-label {
+  display: block;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.login-modal .form-input {
+  text-align: center;
+  font-size: 16px;
+  padding: 14px 20px;
+  border-radius: 14px;
+  height: auto;
+}
 .login-header {
   background: #F5F8FF;
-  padding: 32px 28px 24px;
+  padding: 36px 40px 28px;
   text-align: center;
   border-bottom: 1px solid var(--border-light);
   display: flex;
@@ -984,11 +1016,11 @@ select.form-control {
   gap: 12px;
 }
 .login-logo {
-  width: 100px;
+  width: 110px;
   height: auto;
 }
 .login-title {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 700;
   color: var(--text-dark);
   margin: 0;
@@ -1006,18 +1038,22 @@ select.form-control {
   padding: 10px 14px;
   border-radius: var(--radius-md);
   margin-top: 4px;
+  width: 100%;
+  text-align: center;
 }
 .login-btn {
   width: 100%;
   border-radius: 28px;
-  padding: 12px 24px;
+  padding: 14px 24px;
   font-size: 16px;
   font-weight: 600;
+  text-align: center;
   background: var(--sura-blue);
   color: #fff;
   border: none;
   cursor: pointer;
   transition: background var(--ease);
+  display: block;
 }
 .login-btn:hover { background: #1a5be0; }
 
