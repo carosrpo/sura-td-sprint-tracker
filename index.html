@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seguimiento de Sprints · Transformación Digital SURA</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════
+       HEADER
+  ══════════════════════════════════════════ -->
+  <header class="app-header">
+    <!-- Franja superior decorativa -->
+    <div class="header-top-strip"></div>
+    <!-- Franja principal -->
+    <div class="header-main">
+    <div class="container">
+      <div class="header-left">
+        <div class="brand">
+          <svg class="sura-logo" viewBox="0 0 150 52" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-label="SURA">
+            <style>.st0{fill:#FFFFFF;}</style>
+            <g>
+              <path class="st0" d="M128.6,41.8c0.1-0.1,0-0.2-0.1-0.2c-2.8,1.1-9,2.2-12.8,2.8c-3.3,0.5-6.2,0.6-7.7,0.7l-0.7,0.1c-0.1,0-0.1,0.1-0.1,0.1c0,0.1,0,0.1,0.1,0.1c0.3,0.3,1.2,1.2,3.1,1.5c2.1,0.3,5.3-0.3,9.3-1.4C122.9,44.6,126.7,42.9,128.6,41.8"/>
+              <path class="st0" d="M128.9,43.4c-1.8,1.2-4.2,2.4-7.1,3.4s-6.1,1.9-9.5,2.5c-0.1,0-0.1,0.1-0.1,0.1v0.1c0.6,0.5,1.3,0.7,2.2,0.8c1.1,0.1,2.4,0,4-0.4c1.4-0.4,2.7-1,4.2-1.7c1.4-0.7,2.8-1.5,3.9-2.3c1.2-0.8,2-1.7,2.6-2.4C128.9,43.5,128.9,43.5,128.9,43.4"/>
+              <path class="st0" d="M114.4,12c0.7,0.8,1.6,1.3,2.8,1.7h0.1c0.3,0.1,19.1,5,24,6.4c2.2,0.6,3.9,1,4.7,1.3c0.1,0,0.1,0,0.1-0.1c0,0,0-0.1-0.1-0.1c-3.1-1.3-22.4-8.7-29.7-11.5l-3.1-1.2c-0.1,0-0.2,0-0.2,0v0.1c0,0.3,0.2,1.6,0.8,2.6C114,11.5,114.2,11.7,114.4,12"/>
+              <path class="st0" d="M115.2,4.6c0.4,0.5,0.7,0.8,1.4,1.2c0.2,0.1,0.5,0.3,0.7,0.4l1.7,0.9c1,0.5,15.5,7.2,17.6,8.3c2.5,1.2,5,2.4,6.1,3c0.1,0,0.2,0,0.1-0.1c-2.7-1.7-13.1-8.2-20.4-12.8l-5.3-3.2l-1-0.6l-1.8-1.1c-0.1,0-0.1,0-0.2,0S114,0.7,114,0.7c0,0.2,0,1.6,0.4,2.6C114.7,3.7,114.9,4.2,115.2,4.6"/>
+              <path class="st0" d="M128.3,46.7C128.3,46.7,128.2,46.7,128.3,46.7c-2.5,2.4-6,3.7-7.2,4.1c-0.1,0-0.1,0.1-0.1,0.1c0,0.1,0,0.1,0.1,0.2c0.2,0.1,1.6,0.9,4.3-0.5c1.5-0.8,2.3-2,3-3.7C128.4,46.7,128.3,46.7,128.3,46.7"/>
+              <path class="st0" d="M145.5,26.8c-1.2,0.3-5.8,1.5-9.9,2.6c-3.5,0.9-7.4,2-7.4,2c-0.4,0.1-0.3,0.3-0.2,0.3c0.1,0.2,0.3,0.5,0.6,1c0.6,1.1,1.5,0.9,2.2,0.7c0.1,0,14.1-5.9,14.8-6.3c0.1-0.1,0-0.1,0-0.1C145.6,26.8,145.5,26.8,145.5,26.8"/>
+              <path class="st0" d="M139.4,36.6L139.4,36.6c-1.9,1.6-4.8,4-7.7,6.5c-0.3,0.2-0.4,0.6-0.5,1.1c-0.2,0.8-0.6,1.9-0.6,1.9c-0.1,0.2,0,0.3,0.3,0.1c2.2-2.4,7.2-7.9,8.6-9.5C139.5,36.6,139.4,36.6,139.4,36.6"/>
+              <path class="st0" d="M148.2,23.1c-2.5-0.5-32.7-5.8-32.8-5.8c-0.1,0-0.1,0-0.2,0.1c0,0.1,0,0.1,0,0.2c0.5,1.6,1.7,3.1,3.7,3.8c0.2,0.1,0.4,0.1,0.7,0.1c0,0,25.7,1.7,28.5,1.9c0.1,0,0.1,0,0.1-0.1S148.3,23.1,148.2,23.1"/>
+              <path class="st0" d="M147,24.8c-0.9,0-2.8,0-5.1,0c-2.7,0-5.9,0-9,0c-4.1,0-10.7,0-10.7,0s-0.1,0-0.1,0.1V25c0.1,0.3,0.5,1,0.9,1.4c0.8,0.9,1.7,1.3,2.7,1.4c0.1,0,0.2,0,0.3,0s0.2,0,0.3,0c0.1,0,19.6-2.8,20.7-2.9C147,25,147.1,25,147,24.8C147.1,24.9,147,24.8,147,24.8"/>
+              <path class="st0" d="M144,29.6c-1.3,0.8-4.8,3-7.8,4.8c-1.7,1-3.8,2.2-4.9,2.9c-0.1,0.1-0.2,0.1-0.2,0.4c0,0,0.1,0.3,0.1,0.7c0.1,1.6,0.8,1.4,1.8,0.7l0.1-0.1c3.4-2.8,9.6-8,11-9.2C144,29.6,144,29.6,144,29.6"/>
+              <path class="st0" d="M87.5,12c-6.7,0-13,4.9-13.3,14.6c-0.2,8.7,4.3,14.9,12,14.9c6.3,0,8.6-4.4,8.6-4.4c0.4,3,2,3.9,5.1,3.9V12H87.5L87.5,12z M94.5,29c0,4-2.3,7.8-7.3,7.8c-4.4,0-7.6-3-7.4-10.2c0.2-6.9,3.5-10,7.9-10c0.3,0,0.7,0,1,0l0,0h5.8V29L94.5,29z"/>
+              <path class="st0" d="M44.8,12v20c0,2.9-2.4,4.4-5.6,4.4c-3.4,0-5.5-1.5-5.5-4.4V17c0-4.3-2.7-5-5-5v21.2c0,5.4,4.8,8,10.5,8s10.8-2.6,10.8-8V17.7C49.9,13.5,48.3,12,44.8,12"/>
+              <path class="st0" d="M16.7,24.9l-6.2-1.7c-1.7-0.5-3.2-1.2-3.2-3.3s1.3-3.2,4-3.2h5.5c2.4,0,5.3-0.8,5.3-4.8H11.8c-6.4,0-10,3.2-10,7.8c0,4.3,2.7,6.7,7.6,8l5.4,1.4c2.2,0.6,3,2,3,3.4c0,2.2-1.4,3.5-4.7,3.5L2.7,36.2v4.7h10.5c6.4,0,10-3.4,10-7.9S21.4,26.2,16.7,24.9"/>
+              <path class="st0" d="M67.2,12c-6.2,0-10.5,3.6-10.5,11v17.9h5v-18c0-3.8,2.1-6.1,6-6.1h1.5c4.4,0,5.1-2.3,5.1-4.8L67.2,12L67.2,12z"/>
+            </g>
+          </svg>
+          <div class="brand-divider"></div>
+          <div class="brand-text">
+            <div class="brand-name">Transformación Digital</div>
+            <div class="brand-sub">Seguimiento de sprints: Evolución Activos Digitales</div>
+          </div>
+        </div>
+      </div>
+      <div class="header-right">
+        <button class="btn btn-ghost-white" id="btn-config">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="15" height="15"><path d="M12 15a3 3 0 100-6 3 3 0 000 6z"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z"/></svg>
+          Configuración
+        </button>
+        <!-- Usuario activo -->
+        <div class="header-user" id="header-user">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          <span class="header-user-name" id="header-user-name">—</span>
+          <button class="btn-logout" id="btn-logout" title="Cerrar sesión">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="15" height="15"><path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+          </button>
+        </div>
+        <button class="btn btn-white" id="btn-new-entry">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="15" height="15"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          Agregar avance
+        </button>
+      </div>
+    </div>
+    </div><!-- /header-main -->
+  </header>
+
+  <!-- ══════════════════════════════════════════
+       SPRINT NAVIGATOR
+  ══════════════════════════════════════════ -->
+  <div class="sprint-navigator">
+    <div class="container">
+      <div class="navigator-inner">
+        <div class="nav-left">
+          <div class="year-selector">
+            <button class="year-btn" id="btn-year-prev">‹</button>
+            <span class="year-display" id="year-display">2026</span>
+            <button class="year-btn" id="btn-year-next">›</button>
+          </div>
+          <div class="divider-v"></div>
+          <div class="quarter-tabs" id="quarter-tabs">
+            <button class="q-tab" data-q="Q1">Q1</button>
+            <button class="q-tab" data-q="Q2">Q2</button>
+            <button class="q-tab" data-q="Q3">Q3</button>
+            <button class="q-tab" data-q="Q4">Q4</button>
+          </div>
+          <div class="divider-v"></div>
+          <div class="sprint-pills" id="sprint-pills">
+            <!-- rendered dynamically -->
+          </div>
+        </div>
+        <div class="nav-right" id="sprint-date-badge">
+          <!-- rendered dynamically -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       PO FILTER BAR
+  ══════════════════════════════════════════ -->
+  <div class="po-filter-bar">
+    <div class="container">
+      <span class="filter-label">PO:</span>
+      <div class="po-pills" id="po-pills">
+        <button class="po-pill active" data-po="all">Todos</button>
+      </div>
+      <div class="entry-count" id="entry-count"></div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       MAIN CONTENT
+  ══════════════════════════════════════════ -->
+  <main class="main-content">
+    <div class="container">
+
+      <div class="stats-bar" id="stats-bar"></div>
+
+      <div class="cards-grid" id="cards-grid"></div>
+
+      <div class="empty-state" id="empty-state" hidden>
+        <div class="empty-icon">
+          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" width="80" height="80">
+            <rect x="8"  y="45" width="14" height="27" rx="3" fill="#cdced9"/>
+            <rect x="30" y="30" width="14" height="42" rx="3" fill="#cdced9"/>
+            <rect x="52" y="14" width="14" height="58" rx="3" fill="#cdced9"/>
+          </svg>
+        </div>
+        <h3>Sin avances para este sprint</h3>
+        <p>Registra el avance de los proyectos al finalizar el sprint.</p>
+        <button class="btn btn-white" id="btn-new-entry-empty" style="background:#E3E829;color:#26328C;border-radius:28px;padding:8px 18px;font-size:16px;font-weight:600;border:none;min-width:150px;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="24" height="24"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          Agregar avance
+        </button>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ══════════════════════════════════════════
+       MODAL: DETALLE
+  ══════════════════════════════════════════ -->
+  <div class="modal-overlay" id="modal-detail" hidden>
+    <div class="modal modal-large">
+      <div class="modal-header">
+        <div class="modal-header-info">
+          <div class="modal-eyebrow" id="detail-eyebrow"></div>
+          <h2 class="modal-title" id="detail-title"></h2>
+          <div class="modal-subtitle" id="detail-subtitle"></div>
+        </div>
+        <button class="modal-close" id="btn-close-detail" aria-label="Cerrar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="18" height="18"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <div class="modal-body" id="detail-body"></div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" id="btn-close-detail-f">Cerrar</button>
+        <button class="btn btn-danger-outline" id="btn-delete-from-detail">Eliminar entrada</button>
+        <button class="btn btn-primary" id="btn-edit-from-detail">Editar entrada</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       MODAL: FORMULARIO
+  ══════════════════════════════════════════ -->
+  <div class="modal-overlay" id="modal-form" hidden>
+    <div class="modal modal-medium">
+      <div class="modal-header">
+        <h2 class="modal-title" id="form-modal-title">Agregar avance de sprint</h2>
+        <button class="modal-close" id="btn-close-form" aria-label="Cerrar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="18" height="18"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form id="entry-form" novalidate>
+          <input type="hidden" id="f-entry-id">
+
+          <!-- Proyecto + PO -->
+          <div class="form-row-2">
+            <div class="form-group">
+              <label class="form-label" for="f-project">Proyecto <span class="req">*</span></label>
+              <div class="input-with-btn">
+                <select class="form-control" id="f-project" required>
+                  <option value="">Selecciona un proyecto...</option>
+                </select>
+                <button type="button" class="btn-add-inline" id="btn-new-project-inline" title="Crear nuevo proyecto">+</button>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="f-po">PO Responsable <span class="req">*</span></label>
+              <select class="form-control" id="f-po" required>
+                <option value="">Selecciona un PO...</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Sprint: banner (nueva entrada) o selectores (editar) -->
+          <div class="sprint-banner" id="f-sprint-banner"></div>
+
+          <div class="form-group" id="f-sprint-edit-group" hidden>
+            <label class="form-label">Sprint de la entrada</label>
+            <div class="sprint-edit-row">
+              <select class="form-control" id="f-edit-quarter">
+                <option value="Q1">Q1</option>
+                <option value="Q2">Q2</option>
+                <option value="Q3">Q3</option>
+                <option value="Q4">Q4</option>
+              </select>
+              <select class="form-control" id="f-edit-sprint">
+                <option value="1">Sprint 1</option>
+                <option value="2">Sprint 2</option>
+                <option value="3">Sprint 3</option>
+                <option value="4">Sprint 4</option>
+                <option value="5">Sprint 5</option>
+              </select>
+              <select class="form-control" id="f-edit-year">
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+              </select>
+            </div>
+            <span class="form-hint">Cambia el sprint al que pertenece esta entrada si fue registrada incorrectamente.</span>
+          </div>
+
+          <!-- Estado -->
+          <div class="form-group">
+            <label class="form-label">Estado del proyecto</label>
+            <div class="status-group">
+              <label class="status-opt">
+                <input type="radio" name="f-estado" value="en_progreso" checked>
+                <span class="status-chip chip-progreso">En progreso</span>
+              </label>
+              <label class="status-opt">
+                <input type="radio" name="f-estado" value="completado">
+                <span class="status-chip chip-completado">Completado</span>
+              </label>
+              <label class="status-opt">
+                <input type="radio" name="f-estado" value="bloqueado">
+                <span class="status-chip chip-bloqueado">Bloqueado</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Objetivo -->
+          <div class="form-group">
+            <label class="form-label" for="f-objetivo">Objetivo del sprint <span class="req">*</span></label>
+            <textarea class="form-control" id="f-objetivo" rows="3" placeholder="¿Qué se esperaba alcanzar en este sprint para el proyecto?" required></textarea>
+          </div>
+
+          <!-- Responsables (multi-select desde Configuración) -->
+          <div class="form-group">
+            <label class="form-label">Responsables</label>
+            <div class="resp-dropdown" id="resp-dropdown">
+              <button type="button" class="resp-trigger" id="resp-trigger">
+                <span id="resp-trigger-label">Selecciona los responsables...</span>
+                <svg class="resp-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="16" height="16"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+              <div class="resp-menu" id="resp-menu" hidden>
+                <div class="resp-menu-list" id="resp-menu-list">
+                  <!-- opciones renderizadas dinámicamente -->
+                </div>
+              </div>
+            </div>
+            <div class="tags-preview" id="f-tags-preview"></div>
+            <input type="hidden" id="f-responsables">
+          </div>
+
+          <!-- Logros -->
+          <div class="form-group">
+            <label class="form-label" for="f-logros">Logros obtenidos <span class="req">*</span></label>
+            <textarea class="form-control" id="f-logros" rows="4" placeholder="Describe los hitos e hitos alcanzados durante el sprint..." required></textarea>
+          </div>
+
+          <!-- Impedimentos -->
+          <div class="form-group">
+            <label class="form-label" for="f-impedimentos">Impedimentos y novedades</label>
+            <textarea class="form-control" id="f-impedimentos" rows="3" placeholder="Bloqueos, riesgos o novedades relevantes (opcional)..."></textarea>
+          </div>
+
+          <!-- Gestiones en curso -->
+          <div class="form-group">
+            <label class="form-label" for="f-gestiones">Gestiones en curso</label>
+            <textarea class="form-control" id="f-gestiones" rows="3" placeholder="Acciones o gestiones activas para el siguiente sprint..."></textarea>
+            <span class="form-hint">Aplica cuando el proyecto continúa en el siguiente sprint</span>
+          </div>
+
+          <!-- Porcentaje -->
+          <div class="form-group">
+            <label class="form-label">Porcentaje de avance del proyecto</label>
+            <div class="pct-row">
+              <input type="range" class="range-slider" id="f-pct-range" min="0" max="100" value="0" step="5">
+              <div class="pct-number-wrap">
+                <input type="number" class="pct-number" id="f-pct-num" min="0" max="100" value="0">
+                <span class="pct-sign">%</span>
+              </div>
+            </div>
+            <div class="pct-track"><div class="pct-fill" id="f-pct-fill"></div></div>
+          </div>
+
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" id="btn-cancel-form">Cancelar</button>
+        <button class="btn btn-primary" id="btn-save-form">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="15" height="15"><path d="M19 21H5a2 2 0 01-2-2V5a2 2 0 012-2h11l5 5v11a2 2 0 01-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
+          Guardar entrada
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       MODAL: CONFIGURACIÓN
+  ══════════════════════════════════════════ -->
+  <div class="modal-overlay" id="modal-config" hidden>
+    <div class="modal modal-medium">
+      <div class="modal-header">
+        <h2 class="modal-title">Configuración</h2>
+        <button class="modal-close" id="btn-close-config" aria-label="Cerrar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="18" height="18"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="cfg-tabs">
+          <button class="cfg-tab active" data-tab="pos">Product Owners</button>
+          <button class="cfg-tab" data-tab="projects">Proyectos</button>
+          <button class="cfg-tab" data-tab="responsables">Responsables</button>
+        </div>
+
+        <!-- POs -->
+        <div class="cfg-panel" id="cfg-panel-pos">
+          <div class="cfg-add-row">
+            <input type="text" class="form-control" id="new-po-input" placeholder="Nombre completo del PO">
+            <button class="btn btn-primary" id="btn-add-po">Agregar</button>
+          </div>
+          <div class="cfg-list" id="po-list"></div>
+        </div>
+
+        <!-- Proyectos -->
+        <div class="cfg-panel" id="cfg-panel-projects" hidden>
+          <div class="cfg-project-form">
+            <div class="cfg-form-row cfg-form-row-3">
+              <div class="cfg-form-group">
+                <label class="cfg-form-label">Nombre del proyecto</label>
+                <input type="text" class="form-control" id="new-project-input" placeholder="Ej: Portal de Clientes">
+              </div>
+              <div class="cfg-form-group">
+                <label class="cfg-form-label">PO responsable</label>
+                <select class="form-control" id="new-project-po-select">
+                  <option value="">Selecciona un PO...</option>
+                </select>
+              </div>
+              <div class="cfg-form-group">
+                <label class="cfg-form-label">Año</label>
+                <select class="form-control" id="new-project-year">
+                  <option value="2025">2025</option>
+                  <option value="2026" selected>2026</option>
+                  <option value="2027">2027</option>
+                </select>
+              </div>
+            </div>
+            <div class="cfg-form-row">
+              <div class="cfg-form-group">
+                <label class="cfg-form-label">Sprint inicial</label>
+                <div class="sprint-range-select">
+                  <select class="form-control" id="new-project-start-q">
+                    <option value="Q1">Q1</option>
+                    <option value="Q2">Q2</option>
+                    <option value="Q3">Q3</option>
+                    <option value="Q4">Q4</option>
+                  </select>
+                  <select class="form-control" id="new-project-start-s">
+                    <option value="1">Sprint 1</option>
+                    <option value="2">Sprint 2</option>
+                    <option value="3">Sprint 3</option>
+                    <option value="4">Sprint 4</option>
+                    <option value="5">Sprint 5</option>
+                  </select>
+                </div>
+              </div>
+              <div class="cfg-form-group">
+                <label class="cfg-form-label">Sprint final</label>
+                <div class="sprint-range-select">
+                  <select class="form-control" id="new-project-end-q">
+                    <option value="Q1">Q1</option>
+                    <option value="Q2">Q2</option>
+                    <option value="Q3">Q3</option>
+                    <option value="Q4">Q4</option>
+                  </select>
+                  <select class="form-control" id="new-project-end-s">
+                    <option value="1">Sprint 1</option>
+                    <option value="2">Sprint 2</option>
+                    <option value="3">Sprint 3</option>
+                    <option value="4">Sprint 4</option>
+                    <option value="5">Sprint 5</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="cfg-form-actions">
+              <button class="btn btn-primary" id="btn-add-project">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+                Agregar proyecto
+              </button>
+            </div>
+          </div>
+
+          <!-- Lista agrupada por año y trimestre -->
+          <div id="project-list"></div>
+        </div>
+
+        <!-- Responsables -->
+        <div class="cfg-panel" id="cfg-panel-responsables" hidden>
+          <div class="cfg-add-row">
+            <input type="text" class="form-control" id="new-resp-input" placeholder="Nombre completo del responsable">
+            <button class="btn btn-primary" id="btn-add-resp">Agregar</button>
+          </div>
+          <div class="cfg-list" id="resp-list"></div>
+        </div>
+
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" id="btn-close-config-f">Listo</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       MODAL: CONFIRMACIÓN
+  ══════════════════════════════════════════ -->
+  <div class="modal-overlay" id="modal-confirm" hidden>
+    <div class="modal modal-small">
+      <div class="modal-header">
+        <h2 class="modal-title" id="confirm-title">¿Confirmar acción?</h2>
+      </div>
+      <div class="modal-body">
+        <p id="confirm-message" style="color:var(--text-medium);line-height:1.6;"></p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-secondary" id="btn-confirm-cancel">Cancelar</button>
+        <button class="btn btn-danger" id="btn-confirm-ok">Confirmar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       MODAL: LOGIN
+  ══════════════════════════════════════════ -->
+  <div class="modal-overlay" id="modal-login">
+    <div class="modal modal-small login-modal">
+      <div class="login-header">
+        <svg class="sura-logo login-logo" viewBox="0 0 150 52" xmlns="http://www.w3.org/2000/svg" aria-label="SURA">
+          <style>.lst0{fill:#2D6DF6;}</style>
+          <g>
+            <path class="lst0" d="M128.6,41.8c0.1-0.1,0-0.2-0.1-0.2c-2.8,1.1-9,2.2-12.8,2.8c-3.3,0.5-6.2,0.6-7.7,0.7l-0.7,0.1c-0.1,0-0.1,0.1-0.1,0.1c0,0.1,0,0.1,0.1,0.1c0.3,0.3,1.2,1.2,3.1,1.5c2.1,0.3,5.3-0.3,9.3-1.4C122.9,44.6,126.7,42.9,128.6,41.8"/>
+            <path class="lst0" d="M128.9,43.4c-1.8,1.2-4.2,2.4-7.1,3.4s-6.1,1.9-9.5,2.5c-0.1,0-0.1,0.1-0.1,0.1v0.1c0.6,0.5,1.3,0.7,2.2,0.8c1.1,0.1,2.4,0,4-0.4c1.4-0.4,2.7-1,4.2-1.7c1.4-0.7,2.8-1.5,3.9-2.3c1.2-0.8,2-1.7,2.6-2.4C128.9,43.5,128.9,43.5,128.9,43.4"/>
+            <path class="lst0" d="M114.4,12c0.7,0.8,1.6,1.3,2.8,1.7h0.1c0.3,0.1,19.1,5,24,6.4c2.2,0.6,3.9,1,4.7,1.3c0.1,0,0.1,0,0.1-0.1c0,0,0-0.1-0.1-0.1c-3.1-1.3-22.4-8.7-29.7-11.5l-3.1-1.2c-0.1,0-0.2,0-0.2,0v0.1c0,0.3,0.2,1.6,0.8,2.6C114,11.5,114.2,11.7,114.4,12"/>
+            <path class="lst0" d="M115.2,4.6c0.4,0.5,0.7,0.8,1.4,1.2c0.2,0.1,0.5,0.3,0.7,0.4l1.7,0.9c1,0.5,15.5,7.2,17.6,8.3c2.5,1.2,5,2.4,6.1,3c0.1,0,0.2,0,0.1-0.1c-2.7-1.7-13.1-8.2-20.4-12.8l-5.3-3.2l-1-0.6l-1.8-1.1c-0.1,0-0.1,0-0.2,0S114,0.7,114,0.7c0,0.2,0,1.6,0.4,2.6C114.7,3.7,114.9,4.2,115.2,4.6"/>
+            <path class="lst0" d="M128.3,46.7C128.3,46.7,128.2,46.7,128.3,46.7c-2.5,2.4-6,3.7-7.2,4.1c-0.1,0-0.1,0.1-0.1,0.1c0,0.1,0,0.1,0.1,0.2c0.2,0.1,1.6,0.9,4.3-0.5c1.5-0.8,2.3-2,3-3.7C128.4,46.7,128.3,46.7,128.3,46.7"/>
+            <path class="lst0" d="M145.5,26.8c-1.2,0.3-5.8,1.5-9.9,2.6c-3.5,0.9-7.4,2-7.4,2c-0.4,0.1-0.3,0.3-0.2,0.3c0.1,0.2,0.3,0.5,0.6,1c0.6,1.1,1.5,0.9,2.2,0.7c0.1,0,14.1-5.9,14.8-6.3c0.1-0.1,0-0.1,0-0.1C145.6,26.8,145.5,26.8,145.5,26.8"/>
+            <path class="lst0" d="M139.4,36.6L139.4,36.6c-1.9,1.6-4.8,4-7.7,6.5c-0.3,0.2-0.4,0.6-0.5,1.1c-0.2,0.8-0.6,1.9-0.6,1.9c-0.1,0.2,0,0.3,0.3,0.1c2.2-2.4,7.2-7.9,8.6-9.5C139.5,36.6,139.4,36.6,139.4,36.6"/>
+            <path class="lst0" d="M148.2,23.1c-2.5-0.5-32.7-5.8-32.8-5.8c-0.1,0-0.1,0-0.2,0.1c0,0.1,0,0.1,0,0.2c0.5,1.6,1.7,3.1,3.7,3.8c0.2,0.1,0.4,0.1,0.7,0.1c0,0,25.7,1.7,28.5,1.9c0.1,0,0.1,0,0.1-0.1S148.3,23.1,148.2,23.1"/>
+            <path class="lst0" d="M147,24.8c-0.9,0-2.8,0-5.1,0c-2.7,0-5.9,0-9,0c-4.1,0-10.7,0-10.7,0s-0.1,0-0.1,0.1V25c0.1,0.3,0.5,1,0.9,1.4c0.8,0.9,1.7,1.3,2.7,1.4c0.1,0,0.2,0,0.3,0s0.2,0,0.3,0c0.1,0,19.6-2.8,20.7-2.9C147,25,147.1,25,147,24.8C147.1,24.9,147,24.8,147,24.8"/>
+            <path class="lst0" d="M144,29.6c-1.3,0.8-4.8,3-7.8,4.8c-1.7,1-3.8,2.2-4.9,2.9c-0.1,0.1-0.2,0.1-0.2,0.4c0,0,0.1,0.3,0.1,0.7c0.1,1.6,0.8,1.4,1.8,0.7l0.1-0.1c3.4-2.8,9.6-8,11-9.2C144,29.6,144,29.6,144,29.6"/>
+            <path class="lst0" d="M87.5,12c-6.7,0-13,4.9-13.3,14.6c-0.2,8.7,4.3,14.9,12,14.9c6.3,0,8.6-4.4,8.6-4.4c0.4,3,2,3.9,5.1,3.9V12H87.5L87.5,12z M94.5,29c0,4-2.3,7.8-7.3,7.8c-4.4,0-7.6-3-7.4-10.2c0.2-6.9,3.5-10,7.9-10c0.3,0,0.7,0,1,0l0,0h5.8V29L94.5,29z"/>
+            <path class="lst0" d="M44.8,12v20c0,2.9-2.4,4.4-5.6,4.4c-3.4,0-5.5-1.5-5.5-4.4V17c0-4.3-2.7-5-5-5v21.2c0,5.4,4.8,8,10.5,8s10.8-2.6,10.8-8V17.7C49.9,13.5,48.3,12,44.8,12"/>
+            <path class="lst0" d="M16.7,24.9l-6.2-1.7c-1.7-0.5-3.2-1.2-3.2-3.3s1.3-3.2,4-3.2h5.5c2.4,0,5.3-0.8,5.3-4.8H11.8c-6.4,0-10,3.2-10,7.8c0,4.3,2.7,6.7,7.6,8l5.4,1.4c2.2,0.6,3,2,3,3.4c0,2.2-1.4,3.5-4.7,3.5L2.7,36.2v4.7h10.5c6.4,0,10-3.4,10-7.9S21.4,26.2,16.7,24.9"/>
+            <path class="lst0" d="M67.2,12c-6.2,0-10.5,3.6-10.5,11v17.9h5v-18c0-3.8,2.1-6.1,6-6.1h1.5c4.4,0,5.1-2.3,5.1-4.8L67.2,12L67.2,12z"/>
+          </g>
+        </svg>
+        <h2 class="login-title">Seguimiento de Sprints</h2>
+        <p class="login-subtitle">Transformación Digital · SURA</p>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <label class="form-label">Correo electrónico</label>
+          <input type="email" class="form-input" id="login-email" placeholder="correo@sura.com" autocomplete="email">
+        </div>
+        <div class="form-group">
+          <label class="form-label">Contraseña</label>
+          <input type="password" class="form-input" id="login-password" placeholder="••••••••" autocomplete="current-password">
+        </div>
+        <div class="login-error" id="login-error" hidden></div>
+      </div>
+      <div class="modal-footer" style="flex-direction:column;gap:0">
+        <button class="btn btn-primary login-btn" id="btn-login">Ingresar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Overlay de carga inicial -->
+  <div class="app-loading" id="app-loading">
+    <div class="app-loading-inner">
+      <div class="loading-spinner"></div>
+      <span>Cargando...</span>
+    </div>
+  </div>
+
+  <!-- Toast container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- ══════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════ -->
+  <footer class="app-footer">
+    <div class="footer-links">
+      <div class="container">
+        <nav class="footer-nav">
+          <a href="https://www.gruposura.com" target="_blank" rel="noopener">Grupo SURA</a>
+          <a href="https://www.suramericana.com" target="_blank" rel="noopener">Suramericana</a>
+          <a href="https://www.arlsura.com" target="_blank" rel="noopener">ARL SURA</a>
+          <a href="https://www.epssura.com" target="_blank" rel="noopener">EPS SURA</a>
+          <a href="https://proveedores.sura.com" target="_blank" rel="noopener">Proveedores</a>
+          <a href="https://asesores.sura.com" target="_blank" rel="noopener">Asesores</a>
+          <a href="https://www.geosura.com" target="_blank" rel="noopener">GeoSURA</a>
+          <a href="https://fundacion.sura.com" target="_blank" rel="noopener">Fundación SURA</a>
+          <a href="https://geociencias.sura.com" target="_blank" rel="noopener">Geociencias</a>
+        </nav>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <span class="footer-copy">Copyright SURA 2026</span>
+        <div class="footer-social">
+          <!-- Facebook -->
+          <a href="https://www.facebook.com/SuraColombia" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="22" height="22"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <!-- TikTok -->
+          <a href="https://www.tiktok.com/@suracolombia" target="_blank" rel="noopener" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.75a4.85 4.85 0 01-1.01-.06z"/></svg>
+          </a>
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/suracolombia" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="22" height="22"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <!-- YouTube -->
+          <a href="https://www.youtube.com/SuraColombia" target="_blank" rel="noopener" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="22" height="22"><path d="M22.54 6.42a2.78 2.78 0 00-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 00-1.95 1.96A29 29 0 001 12a29 29 0 00.46 5.58A2.78 2.78 0 003.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 001.95-1.95A29 29 0 0023 12a29 29 0 00-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02"/></svg>
+          </a>
+          <!-- X / Twitter -->
+          <a href="https://twitter.com/SuraColombia" target="_blank" rel="noopener" aria-label="X">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.737-8.835L1.254 2.25H8.08l4.253 5.622L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+  <script src="js/supabase-db.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

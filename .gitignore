@@ -1,0 +1,17 @@
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Archivos de fuentes sueltos en raíz (ya están en fonts/)
+/*.otf
+/*.ttf
+/*.woff
+/*.woff2
+
+# Referencia CSS de SURA (no necesaria en producción)
+fonts-sura*.css
+
+# Editor
+.vscode/
+*.swp
