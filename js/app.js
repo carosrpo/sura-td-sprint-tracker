@@ -792,8 +792,9 @@ async function saveEntry() {
     renderAll();
     toast(existingId ? 'Entrada actualizada correctamente.' : 'Entrada guardada correctamente.');
   } catch (err) {
-    console.error(err);
-    toast('Error al guardar. Intenta de nuevo.', 'error');
+    console.error('saveEntry error:', err);
+    const msg = err?.message || err?.details || err?.hint || JSON.stringify(err);
+    toast(`Error al guardar: ${msg}`, 'error');
   } finally {
     setBtnLoading('btn-save-form', false);
   }
