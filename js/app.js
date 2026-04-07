@@ -53,6 +53,9 @@ const state = {
   editingEntryId: null,
 };
 
+// Guard: evita que los event listeners se registren más de una vez
+let _listenersReady = false;
+
 /* ──────────────────────────────────────────────────────────
    DATABASE  — proporcionado por supabase-db.js
    db(), loadData(), sbInsert*, sbUpdate*, sbDelete* disponibles globalmente
@@ -1204,6 +1207,10 @@ async function startApp(user) {
   state.quarter = cur.quarter;
   state.sprint  = cur.sprint;
 
+  // ── Event listeners (solo se registran una vez) ──
+  if (!_listenersReady) {
+    _listenersReady = true;
+
   // ── Navigator ──
   document.getElementById('btn-year-prev').addEventListener('click', () => {
     if (CALENDAR[state.year - 1]) { state.year--; renderAll(); }
@@ -1432,6 +1439,8 @@ async function startApp(user) {
 
   // Empty state button (re-bind after renderDashboard clears it)
   document.getElementById('cards-grid').addEventListener('click', () => {});
+
+  } // fin if (!_listenersReady)
 
   // ── Initial render ──
   renderAll();

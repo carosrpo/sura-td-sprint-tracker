@@ -58,10 +58,20 @@ async function loadData() {
   if (projRes.error) console.error('Error cargando projects:',     projRes.error);
   if (entRes.error)  console.error('Error cargando entries:',      entRes.error);
 
+  // Deduplicar por nombre para sanear filas duplicadas en BD
+  const allProjects = (projRes.data || []).map(mapProject);
+  const seenNames   = new Set();
+  const projects    = allProjects.filter(p => {
+    const key = p.name.trim().toLowerCase();
+    if (seenNames.has(key)) return false;
+    seenNames.add(key);
+    return true;
+  });
+
   _cache = {
     pos:          (posRes.data  || []).map(mapPO),
     responsables: (respRes.data || []).map(mapResponsable),
-    projects:     (projRes.data || []).map(mapProject),
+    projects,
     entries:      (entRes.data  || []).map(mapEntry),
   };
 }
