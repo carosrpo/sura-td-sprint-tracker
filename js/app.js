@@ -132,7 +132,7 @@ function progressColor(pct) {
 }
 
 function statusLabel(s) {
-  return { en_progreso:'En progreso', completado:'Completado', bloqueado:'Bloqueado' }[s] || s;
+  return { progreso:'En progreso', completado:'Completado', bloqueado:'Bloqueado' }[s] || s;
 }
 
 function escHtml(str) {
@@ -695,7 +695,7 @@ function openForm(entryId) {
       document.getElementById('f-edit-sprint').value  = String(e.sprint || state.sprint);
       document.getElementById('f-edit-year').value    = String(e.year   || state.year);
       document.querySelectorAll('[name="f-estado"]').forEach(r => {
-        r.checked = r.value === (e.estado || 'en_progreso');
+        r.checked = r.value === (e.estado || 'progreso');
       });
       document.getElementById('f-objetivo').value      = e.objetivo    || '';
       document.getElementById('f-responsables').value  = e.responsables|| '';
@@ -793,8 +793,7 @@ async function saveEntry() {
     toast(existingId ? 'Entrada actualizada correctamente.' : 'Entrada guardada correctamente.');
   } catch (err) {
     console.error('saveEntry error:', err);
-    const msg = err?.message || err?.details || err?.hint || JSON.stringify(err);
-    toast(`Error al guardar: ${msg}`, 'error');
+    toast('Error al guardar. Intenta de nuevo.', 'error');
   } finally {
     setBtnLoading('btn-save-form', false);
   }
