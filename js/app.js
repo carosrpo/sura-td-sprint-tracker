@@ -1317,6 +1317,10 @@ async function startApp(user) {
       document.getElementById('cfg-panel-pos').hidden          = tab.dataset.tab !== 'pos';
       document.getElementById('cfg-panel-projects').hidden      = tab.dataset.tab !== 'projects';
       document.getElementById('cfg-panel-responsables').hidden  = tab.dataset.tab !== 'responsables';
+      // Refrescar la pestaña activa para que siempre tenga datos actualizados
+      if (tab.dataset.tab === 'projects')     renderConfigProjects();
+      if (tab.dataset.tab === 'responsables') renderConfigResponsables();
+      if (tab.dataset.tab === 'pos')          renderConfigPOs();
     });
   });
 
