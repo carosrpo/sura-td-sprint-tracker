@@ -6,7 +6,7 @@
 'use strict';
 
 const SUPABASE_URL = 'https://foyzqrjoixvafajpflng.supabase.co';
-const SUPABASE_KEY = 'sb_publishable_ZAWGqPXNZlQfQ3HUVWtLTw_KOxjXUOt';
+const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZveXpxcmpvaXh2YWZhanBmbG5nIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzU1OTQ2NDQsImV4cCI6MjA5MTE3MDY0NH0.tRne9bZZahK4de2EjA2IiiUWL-6Mp1Ep0bZUxQML64s';
 
 const _sb = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
