@@ -282,7 +282,7 @@ function renderStats(entries) {
   if (!entries.length) { el.innerHTML = ''; return; }
 
   const avg = Math.round(entries.reduce((s, e) => s + (e.porcentaje || 0), 0) / entries.length);
-  const completados = entries.filter(e => e.estado === 'completado').length;
+  const completados = entries.filter(e => e.porcentaje === 100).length;
   const bloqueados  = entries.filter(e => e.estado === 'bloqueado').length;
 
   el.innerHTML = `
