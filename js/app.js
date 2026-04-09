@@ -1218,12 +1218,12 @@ async function startApp(user) {
   document.getElementById('btn-year-next').addEventListener('click', () => {
     if (CALENDAR[state.year + 1]) { state.year++; renderAll(); }
   });
-  document.getElementById('quarter-tabs').addEventListener('click', (ev) => {
-    const btn = ev.target.closest('.q-tab');
-    if (!btn) return;
-    state.quarter = btn.dataset.q;
-    state.sprint  = 1;
-    renderAll();
+  document.querySelectorAll('.q-tab').forEach(btn => {
+    btn.addEventListener('click', () => {
+      state.quarter = btn.dataset.q;
+      state.sprint  = 1;
+      renderAll();
+    });
   });
 
   // ── Header buttons ──
