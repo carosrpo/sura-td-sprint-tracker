@@ -205,18 +205,11 @@ function renderNavigator() {
   const pillsEl = document.getElementById('sprint-pills');
   const isConsolidado = state.sprint === 'consolidado';
 
-  const pillStatusLabel = { current:'EN CURSO', past:'FINALIZADO', future:'PRÓXIMO' };
-
   pillsEl.innerHTML = sprintData.map(sp => {
     const st = sprintStatus(sp);
     const isCurrent = st === 'current';
     const isActive = sp.s === state.sprint;
-    const dateStr = `${fmt(sp.start)} — ${fmt(sp.end)}`;
-    return `<button class="sprint-pill${isActive?' active':''}${isCurrent?' is-current':''}" data-s="${sp.s}">
-      <span class="pill-title">Sprint ${sp.s}</span>
-      <span class="pill-dates">${dateStr}</span>
-      <span class="pill-meta">${state.quarter}, ${pillStatusLabel[st]}</span>
-    </button>`;
+    return `<button class="sprint-pill${isActive?' active':''}${isCurrent?' is-current':''}" data-s="${sp.s}">Sprint ${sp.s}</button>`;
   }).join('') +
   `<button class="sprint-pill consolidado-pill${isConsolidado?' active':''}" data-s="consolidado">Consolidado</button>`;
 
@@ -248,7 +241,7 @@ function renderNavigator() {
       badge.innerHTML = `
         <div class="sprint-date-info">
           <span class="date-range">${fmt(sp.start)} — ${fmt(sp.end)}, ${state.year}</span>
-          <span class="sprint-status ${st}">${labelMap[st]}</span>
+          <span class="sprint-status ${st}">${state.quarter}, ${labelMap[st]}</span>
         </div>`;
     } else {
       badge.innerHTML = '';
