@@ -15,3 +15,7 @@ fonts-sura*.css
 # Editor
 .vscode/
 *.swp
+
+.vercel
+.vercel-prod
+.vercel-staging
