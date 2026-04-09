@@ -299,21 +299,28 @@ button { font-family: var(--font); cursor: pointer; }
 .q-tab.active { background:var(--sura-blue); color:#fff; font-weight:700; }
 .q-tab:not(.active):hover { background:var(--border-light); color:var(--text-dark); }
 
-.sprint-pills { display:flex; gap:5px; }
+.sprint-pills { display:flex; gap:5px; align-items:stretch; }
 .sprint-pill {
-  padding:4px 13px;
+  padding:6px 13px;
   border:1px solid var(--border);
   background:none;
-  border-radius:20px;
+  border-radius:14px;
   font-size:13px; font-weight:500;
   color:var(--text-muted);
   transition:all var(--ease);
   position:relative;
+  display:flex; flex-direction:column; align-items:center; gap:1px;
+  cursor:pointer;
 }
+.pill-title  { font-size:13px; font-weight:600; line-height:1.2; }
+.pill-dates  { font-size:10px; font-weight:400; opacity:0.8; line-height:1.2; white-space:nowrap; }
+.pill-meta   { font-size:9px; font-weight:700; letter-spacing:0.05em; text-transform:uppercase; line-height:1.2; opacity:0.75; }
 .sprint-pill.active { background:var(--sura-bright); border-color:var(--sura-bright); color:#fff; font-weight:700; }
+.sprint-pill.active .pill-dates,
+.sprint-pill.active .pill-meta { opacity:0.85; }
 .sprint-pill.is-current::after {
   content:'';
-  position:absolute; top:3px; right:5px;
+  position:absolute; top:4px; right:6px;
   width:6px; height:6px;
   border-radius:50%;
   background:#34C759;
