@@ -241,7 +241,7 @@ function renderNavigator() {
       badge.innerHTML = `
         <div class="sprint-date-info">
           <span class="date-range">${fmt(sp.start)} — ${fmt(sp.end)}, ${state.year}</span>
-          <span class="sprint-status ${st}">${state.quarter}, ${labelMap[st]}</span>
+          <span class="sprint-status ${st}">S${state.sprint}-${state.quarter}, ${labelMap[st]}</span>
         </div>`;
     } else {
       badge.innerHTML = '';
